@@ -4,6 +4,11 @@
   <nav class="site-navigation" role="navigation">
     <ul>
       <li>
+       <a href="{{ '/' | relative_url }}" class="site-logo" rel="home" title="{{ site.title }}">
+        <img src="{{ site.icon | relative_url }}" class="site-logo-img animated fadeInDown" alt="{{ site.title }}">
+      </a>
+      </li>
+      <li>
         <a href="{{ '/' | prepend: site.baseurl }}">
           Home
         </a>
