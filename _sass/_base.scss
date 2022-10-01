@@ -159,3 +159,28 @@ figcaption {
     margin-top: 0;
   }
 }
+
+.site-logo {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+
+.site-logo-img {
+  width: $site-logo-width;
+  height: $site-logo-height;
+  border: 5px solid;
+  border-radius: $site-logo-width;
+
+  @include breakpoint($medium) {
+    width: 1.5 * $site-logo-width;
+    height: 1.5 * $site-logo-height;
+    border-radius: 1.5 * $site-logo-width;
+  }
+
+  @include breakpoint($large) {
+    width: 2 * $site-logo-width;
+    height: 2 * $site-logo-height;
+    border-radius: 2 * $site-logo-width;
+  }
+}
