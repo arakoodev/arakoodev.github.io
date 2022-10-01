@@ -167,8 +167,7 @@ figcaption {
 }
 
 .site-logo-img {
-  width: $site-logo-width;
-  height: $site-logo-height;
+  height: 100%;
   border: 5px solid;
   border-radius: $site-logo-width;
   margin: auto;
